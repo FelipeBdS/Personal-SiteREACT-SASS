@@ -1,0 +1,26 @@
+@use '../variables'
+@use '../mixin'
+
+#social-networks
+    @include mixin.center
+    gap: 1rem
+    margin: 1rem 0
+
+    .social-btn
+        padding: .6rem
+        background-color: black
+        border-radius: variables.$container-border-radius
+        color: #fff
+        font-size: 2rem
+        
+
+    #linkedin    
+        color: #0072B1
+
+    #github
+        color: white
+
+
+    :hover
+        font-size: 2.5rem    
+        

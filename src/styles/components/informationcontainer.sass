@@ -1,0 +1,68 @@
+@use '../variables'
+@use '../mixin'
+
+#information
+    @include mixin.center
+    flex-direction: column
+    background-color: variables.$body-bg-color
+    padding: 1rem
+    margin-bottom: 2rem
+    text-align: left
+    width: 80%
+    border-radius: variables.$container-border-radius    
+
+
+    .info-card
+        @include mixin.center
+        justify-content: start
+        gap: 1rem
+        padding-bottom: .8rem
+        margin-bottom: .8rem
+        border-bottom: 1px solid #fff
+        width: 100%
+
+
+        h3
+            color: variables.$text-color-secondary
+            font-family: variables.$title-font
+            font-size: .8rem
+            margin-bottom: .5rem
+
+        p 
+            color: variables.$text-color
+            font-weight: bold
+            font-family: variables.$subtitle-font
+
+        svg 
+            padding: .4rem
+            font-size: 3rem
+            width: 3rem
+            height: 3rem
+            border-radius: variables.$container-border-radius
+
+
+        #phone-icon
+            color: variables.$text-color
+
+        #email-icon
+            color: variables.$text-color
+
+
+        #pin-icon
+            color: variables.$text-color               
+
+
+
+@media (max-width: 425px)
+    .info-card
+        h3
+            font-size: 1rem
+        p
+            font-size: .7rem     
+
+        svg
+            font-size: 1.5rem   
+
+        #pin-icon
+            margin-left: .6rem
+                               

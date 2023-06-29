@@ -1,0 +1,58 @@
+@use '../variables'
+@use '../mixin'
+
+#sidebar
+    background-color: variables.$bg-color
+    flex: 1 1 0
+    border-radius: variables.$container-border-radius
+    display: flex
+    align-items: center
+    flex-direction: column
+    text-align: center
+    position: relative
+    padding: 3rem 0
+
+    img
+        width: 45%
+        border-radius: variables.$container-border-radius
+        position: absolute
+        top: -3rem
+
+    .title
+        color: #fff
+        font-family: variables.$title-font
+        background-color: variables.$body-bg-color
+        border-radius: variables.$container-border-radius
+        margin-top: 12rem
+        padding: .8rem 1.2rem
+        font-size: 1rem
+
+    .btn 
+         @include mixin.btn
+         font-family: variables.$title-font
+
+         &:hover
+            font-size: 1.3rem
+
+         
+@media (max-width: 425px)
+    #sidebar
+        flex: 2 1 0
+        width: 100%
+
+
+        img
+            width: 40%
+
+        .title
+            margin-top: 7rem
+            width: 70%    
+
+        .btn 
+            width: 70%   
+
+             
+@media (max-width: 768px)
+    #sidebar
+        img
+            width: 25%
