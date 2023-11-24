@@ -14,6 +14,9 @@ const ProjectsContainer = () => {
     <a href="https://github.com/FelipeBdS/PingPongJS" className="projects-btn">
         PingPongJS - Projeto do curso Dev Samurai
     </a>
+    <a href="https://felipebds.github.io/Frontend-Mentor-Challenge/" className="projects-btn">
+        Frontend Mentor Challenge - Base Apparel
+    </a>
   </section>
 }
 

@@ -16,7 +16,9 @@ import {
     DiReact,
     DiSass,
     DiPhp,
-    DiMysql
+    DiPostgresql,
+    DiNodejs,
+    
 } from 'react-icons/di'
 import '../styles/components/technologiescontainer.sass'
 
@@ -28,7 +30,8 @@ const technologies = [
     {id: "javascript", name:"JavaScript", icon: <DiJsBadge />, img: JSCertificate },
     {id: "reactjs", name:"ReactJS", icon: <DiReact />, img: ReactJSCertificate },
     {id: "php", name:"PHP", icon: <DiPhp />, img: ''},
-    {id: "sql", name:"SQL", icon: <DiMysql />, img: ''},
+    {id: "sql", name:"POSTGRESQL", icon: <DiPostgresql />, img: ''},
+    {id: "nodejs", name:"NodeJS", icon: <DiNodejs />, img: ''},
 ]
 
 
